@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>My first page</title>
+</head>
+<script>alert("Injecting a script; Right after header!")</script>
+<body>
+    <div>
+	<h2> Enter Username & Password </h2>
+	<div>
+	  <form>
+	   Username: </t>
+	    <input type="text" name="username" value="MyUName"> </br> </br>
+	   Password: </t> 
+	    <input type="password" name="UserPassword" value="passPlease">
+	  </form>
+	</div>
+    </div>
+    <div>
+	<h1> on Terminal type "firefox index.html" </h1>
+	<h2> Write-Click screen and press <b>Inspect</b> </h2>
+	<h3> Change Password input type to "text", Now you see the password </h3>
+    </div>
+  	</br> </br>
+    <h2>Following is an iFrame which can be injected using XSS</h2>
+    <iframe src="javascript:alert('iframe XSS; showing before end of body')">
+</body>
+</html>
+
